@@ -4,7 +4,9 @@ version = "1.0.1"
 description = "A reference implementation of the SLIP-0010 specification, which generalizes the BIP-0032 derivation scheme for private and public key pairs in hierarchical deterministic wallets for the curves secp256k1, NIST P-256, ed25519 and curve25519."
 authors = ["Antoine Poinsot <darosior@protonmail.com>", "Andrew R. Kozlik <andrew.kozlik@satoshilabs.com>"]
 maintainers = ["Andrew R. Kozlik <andrew.kozlik@satoshilabs.com>"]
-license = "MIT"
+
+# slip10/ripemd160.py is MIT
+license = "BSD-3-Clause AND MIT"
 readme = [
     "README.md",
     "CHANGELOG.md",
@@ -24,6 +26,10 @@ isort = "^5"
 # See https://github.com/pytest-dev/pytest/issues/12177#issue-2220516002
 exceptiongroup = { version = "*", markers = "python_version == '3.10'" }
 tomli = { version = "*", markers = "python_version == '3.10'" }
+
+[project]
+license = "BSD-3-Clause AND MIT"
+license-files = ["LICENCE"]
 
 [build-system]
 requires = ["poetry-core"]
